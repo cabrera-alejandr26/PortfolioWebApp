@@ -1,0 +1,44 @@
+.skills-container {
+  height: 100%;
+}
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+
+.order-1,
+.order-2 {
+  display: flex;
+  align-items: center;
+}
+
+.order-1 {
+  flex: 1;
+  max-width: 100%; /* Ensure it uses available space */
+}
+
+.order-2 {
+  flex: 0 0 auto; /* Keep the width of the buttons container more fixed */
+  justify-content: center; /* Center the buttons */
+  max-width: 200px; /* Set a max width for buttons container */
+}
+
+@media (max-width: 990px) {
+  .row {
+    flex-direction: column;
+  }
+
+
+  .order-1,
+  .order-2 {
+    width: 100%; /* Set each to full width for stacking */
+  }
+
+  .order-2 {
+    justify-content: center;
+    flex-direction: row; /* Ensure buttons remain in a row */
+  }
+}

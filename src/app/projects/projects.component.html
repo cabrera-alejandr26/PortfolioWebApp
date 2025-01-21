@@ -1,0 +1,33 @@
+
+<div class="projectsPage ">
+  <div class="container pt-4 projects-container">
+    <div class="d-flex flex-column">
+      <h1 class="display-1 blue-color mt-0"><span id="projectTitle"></span></h1>
+
+          <div class=" mt-5">
+            <div class="row ">
+              <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-5" *ngFor="let project of projects">
+                <div class="card card-outline-primary p-3 h-100" style="width: 18rem;">
+                  <img src="{{project.imagePath}}" class="card-img-top" alt="Image of {{project.name}}">
+                  <div class="card-body">
+                    <a href="{{project.projectUrl}}" target="_blank" rel="noopener noreferrer">
+                      <h2 class="card-title">{{ project.name }}</h2>
+                    </a>
+                    <p class="card-text">{{ project.description }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+
+
+
+
+
+  </div>
+</div>
+
+

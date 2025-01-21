@@ -1,0 +1,32 @@
+<div class="skillsPage m-0">
+  <div class="container pt-4 skills-container">
+    <h1 class="display-1             blue-color"><span id="skillsTitle"></span></h1>
+    <p class="blue-color">
+      The statistics provided below reflect my self-assessment of my skills
+      across different sections. These ratings are based on my level of
+      confidence, with a scale from 1 to 10—where 10 represents the area in
+      which I feel most confident and 1 signifies the area where I feel least
+      proficient. The values given serve as an indication of my current comfort
+      and ability in each area, offering a clear picture of where I stand.
+    </p>
+
+    <div class="row d-flex justify-content-center align-items-center">
+      <!-- Chart above buttons on small to medium screens -->
+      <div class="order-1 order-lg-2 col-12 col-md-10">
+        <div class="chart-container mb-4">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Buttons aligned horizontally on small/medium, vertically on large screens -->
+      <div class="order-2 order-lg-1 col-12 col-md-2 d-flex flex-lg-column flex-row justify-content-center align-items-center mb-3">
+        <ul class="blue-color list-unstyled mb-0 d-flex flex-lg-column flex-row justify-content-center align-items-center">
+          <li class="mb-2 mb-md-0"><button type="button" class="btn btn-outline-primary btn-sm m-md-2" (click)="updateChart('Front-End')" style="cursor: pointer;">Front-End</button></li>
+          <li class="mb-2 mb-md-0"><button type="button" class="btn btn-outline-primary btn-sm m-md-2" (click)="updateChart('Back-End')" style="cursor: pointer;">Back-End</button></li>
+          <li class="mb-2 mb-md-0"><button type="button" class="btn btn-outline-primary btn-sm m-md-2" (click)="updateChart('Game Development')" style="cursor: pointer;">Game Development</button></li>
+          <li class="mb-2 mb-md-0"><button type="button" class="btn btn-outline-primary btn-sm m-md-2" (click)="updateChart('Dev-Tools')" style="cursor: pointer;">Dev Tools</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

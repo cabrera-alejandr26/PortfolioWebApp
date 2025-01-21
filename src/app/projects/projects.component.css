@@ -1,0 +1,16 @@
+a{
+  font-family: 'Rajdhani SemiBold', sans-serif;
+  color: #8eedfd;
+  /*text-shadow: 0 0 30px rgba(142, 237, 253, 0.7), !* Outer glow effect *!*/
+  /*0 0 50px rgba(142, 237, 253, 0.6),*/
+  /*0 0 40px rgba(142, 237, 253, 0.4);*/
+}
+
+a:hover {
+  font-family: 'Rajdhani SemiBold', sans-serif;
+  /*color: #cbf7fa;*/
+  color: #880404;
+  /*text-shadow: 0 0 30px rgba(142, 237, 253, 0.7), !* Outer glow effect *!*/
+  /*0 0 50px rgba(142, 237, 253, 0.6),*/
+  /*0 0 40px rgba(142, 237, 253, 0.4);*/
+}
